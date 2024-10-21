@@ -15,6 +15,7 @@ myRequest.onreadystatechange = function() {
 function print(value) {
     let content = document.createTextNode(value)
     let element = document.createElement("div")
+element.className = "title"
     element.appendChild(content)
     document.body.appendChild(element)
 }
